@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+}
+body {
+  background: rgb(218, 235, 229);
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 50%;
+  margin: 20px auto 0 auto;
+  border: 2px solid rgb(3, 61, 61);
+  background-color: rgb(24, 70, 70);
+  border-radius: 5px;
+}
+.vila::before {
+  content: "+";
+}
+.active.vila {
+  background-color: rgb(49, 114, 114);
+}
+.active.vila::before {
+  content: "-";
+  margin-right: 5px;
+}
+.vila {
+  color: rgb(1, 19, 19);
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0.5px solid black;
+  width: 100%;
+  background-color: rgb(72, 143, 143);
+  text-align: left;
+  padding: 10px;
+}
+h3 {
+  font-size: 20px;
+  margin: 0 15px;
+  color: rgb(223, 255, 255);
+}
+ul {
+  padding: 0 15px;
+}
+li {
+  padding-left: 20px;
+  display: block;
+  list-style: none;
+  color: rgb(135, 193, 193);
+  font-size: 18px;
+}
+.kage {
+  display: none;
+}
